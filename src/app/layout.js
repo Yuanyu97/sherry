@@ -18,11 +18,11 @@ export const metadata = {
   openGraph: {
     title: "From: Fred, To: Sherry\n",
     description: "Hi Sherry, this is a website that I programmed (since I'm a programmer so it's only fitting HAHA) for you, hope you like it :)",
-    url: "for-sherry.netlify.app", // Change this when deploying
+    url: "https://for-sherry.netlify.app", // Change this when deploying
     type: "website",
     images: [
       {
-        url: "for-sherry.netlify.app/sherry/seo.jpg", // Make sure this image exists in `/public`
+        url: "https://for-sherry.netlify.app/sherry/seo.jpg", // Make sure this image exists in `/public`
         width: 1200,
         height: 630,
         alt: "Sherry's Website Preview",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "From: Fred, To: Sherry\n",
     description: "Hi Sherry, this is a website that I programmed (since I'm a programmer so it's only fitting HAHA) for you, hope you like it :)",
-    images: ["for-sherry.netlify.app/sherry/seo.jpg"], // Use same image as Open Graph
+    images: ["https://for-sherry.netlify.app/sherry/seo.jpg"], // Use same image as Open Graph
   },
 };
 
