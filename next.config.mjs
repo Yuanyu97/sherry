@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    metadataBase: new URL("for-sherry.netlify.app"), // Replace with your actual domain
+    metadataBase: new URL("https://for-sherry.netlify.app"), // Add 'https://'
     trailingSlash: true,
     images: {
-      unoptimized: true, // Required if you don't use a dedicated image optimizer (for static hosting)
+      unoptimized: true, // Required for Netlify hosting
     },
   };
   
