@@ -66,7 +66,7 @@ export default function Intro() {
 
     const introComponent = (
         <Typography variant='h6' style={{ marginTop: '10px', textAlign: 'center' }}>
-            These past three months since getting to know you have been nothing short of amazing. Let’s take a trip down our not-so-long memory lane, shall we~
+            The past three months of knowing you have been nothing short of amazing. Let's take a trip down our not-so-long memory lane, shall we~ ✨
         </Typography>
     )
 
