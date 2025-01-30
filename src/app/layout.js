@@ -15,27 +15,31 @@ export const metadata = {
   title: "Sherry",
   description:
     "Hi Sherry, this is a website that I programmed (since I'm a programmer so it's only fitting HAHA) for you, hope you like it :)",
+  metadataBase: new URL("https://for-sherry.netlify.app"), // Ensures metadata works correctly
+
   openGraph: {
-    title: "From: Fred, To: Sherry\n",
+    title: "From: Fred, To: Sherry",
     description:
       "Hi Sherry, this is a website that I programmed (since I'm a programmer so it's only fitting HAHA) for you, hope you like it :)",
-    url: "https://for-sherry.netlify.app", // Change this when deploying
+    url: "https://for-sherry.netlify.app",
+    siteName: "Sherry's Website",
     type: "website",
     images: [
       {
-        url: "https://for-sherry.netlify.app/sherry/seo.jpg", // Ensure this image exists in `/public`
+        url: "/sherry/seo.jpg", // Make sure this image exists in `/public`
         width: 1200,
         height: 630,
         alt: "Sherry's Website Preview",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "From: Fred, To: Sherry\n",
+    title: "From: Fred, To: Sherry",
     description:
       "Hi Sherry, this is a website that I programmed (since I'm a programmer so it's only fitting HAHA) for you, hope you like it :)",
-    images: ["https://for-sherry.netlify.app/sherry/seo.jpg"], // Same image as Open Graph
+    images: ["/sherry/seo.jpg"], // Uses same image as Open Graph
   },
 };
 
