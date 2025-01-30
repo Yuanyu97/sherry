@@ -15,7 +15,7 @@ export const metadata = {
   title: "Sherry",
   description:
     "Hi Sherry, this is a website that I programmed (since I'm a programmer so it's only fitting HAHA) for you, hope you like it :)",
-  metadataBase: new URL("https://for-sherry.netlify.app"), // Ensures metadata works correctly
+  metadataBase: new URL("https://for-sherry.netlify.app"), // FULL absolute URL
 
   openGraph: {
     title: "From: Fred, To: Sherry",
@@ -26,7 +26,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/sherry/seo.jpg", // Make sure this image exists in `/public`
+        url: "https://for-sherry.netlify.app/sherry/seo.jpg", // FULL absolute URL
         width: 1200,
         height: 630,
         alt: "Sherry's Website Preview",
@@ -39,7 +39,7 @@ export const metadata = {
     title: "From: Fred, To: Sherry",
     description:
       "Hi Sherry, this is a website that I programmed (since I'm a programmer so it's only fitting HAHA) for you, hope you like it :)",
-    images: ["/sherry/seo.jpg"], // Uses same image as Open Graph
+    images: ["https://for-sherry.netlify.app/sherry/seo.jpg"], // FULL absolute URL
   },
 };
 
