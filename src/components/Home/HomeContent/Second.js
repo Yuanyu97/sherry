@@ -77,7 +77,7 @@ export default function Second() {
         <div className={classes.typoItem}>
             {headerComponent}
             <Typography variant='h6' style={{ marginTop: '10px' }}>
-                {"This is the first picture we ever took together!! Didn't take photos for other dates as we were still trying to figure each other out, but we still made it hehehe~ And also, it was the first date of us being exclusive :-) This night was so funny, with you judging other peeps in the most obvious way, and me being a water fountain"}
+                {"This is the first picture we ever took together!! Didn't take photos for previous dates as we were still trying to figure each other out, but we still made it hehehe~ And also, it was the first date of us being exclusive :-) This night was so funny, with you judging other peeps in the most obvious way, and me being a water fountain"}
             </Typography>
         </div>
     )

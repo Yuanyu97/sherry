@@ -70,7 +70,7 @@ export default function Tenth() {
     if (!isClient) return null; 
     const headerComponent = (
         <div className={classes.introHeader}>
-            {"Sherry in her element"}
+            {"Sherry in her 🍾 element"}
         </div>
     )
     const textComponent = (

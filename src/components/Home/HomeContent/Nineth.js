@@ -71,14 +71,14 @@ export default function Nineth() {
     if (!isClient) return null; 
     const headerComponent = (
         <div className={classes.introHeader}>
-            {"Axe throwing"}
+            {"🪓 throwing"}
         </div>
     )
     const textComponent = (
         <div className={classes.typoItem}>
             {headerComponent}
             <Typography variant='h6' style={{ marginTop: '10px' }}>
-                {"This day itself is enough for me to know to never anger Sherry XD Raw axe throwing talent here! I'm sorry if I have ever 惹你生气，I sincerely apologize—please don’t use your newfound skill on me haha!"}
+                {"This day itself is enough for me to know to never anger Sherry XD Raw axe throwing talent here! I sincerely apologize if I have ever 惹你生气, —please don't use your newfound skill on me haha!"}
             </Typography>
         </div>
     )

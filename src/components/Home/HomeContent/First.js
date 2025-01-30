@@ -78,7 +78,7 @@ export default function First() {
         <div className={classes.typoItem}>
             {headerComponent}
             <Typography variant='h6'>
-                {"I went to download back the app to take a screenshot of this HAHAHA Glad my rizz(?) managed to get your attention ya hehe, but whatever I said is true! 缘分让我们在这个平台相遇 :-)"}
+                {"I re-downloaded the app just to take a screenshot of this HAHAHA Glad my rizz(?) managed to get your attention ya hehe, but whatever I said is true! 缘分让我们在这个平台相遇 :-)"}
             </Typography>
         </div>
     )

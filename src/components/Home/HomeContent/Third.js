@@ -70,14 +70,14 @@ export default function Third() {
     if (!isClient) return null; 
     const headerComponent = (
         <div className={classes.introHeader}>
-            {"First Christmas together"}
+            {"First 🎄 together"}
         </div>
     ) 
     const textComponent = (
         <div className={classes.typoItem}>
             {headerComponent}
             <Typography variant='h6' style={{ marginTop: '10px' }}>
-                {"Our first Christmas together!! Had so much fun that night as well, with me being \"gay\" for a few minutes trying on your earring, and the waiters in the bar thinking we are ACTUAL alcoholics for drinking that much alcohol HAHA Also, pleasantly surprised by how much effort you put in for my Christmas gift yaaa love it a lot hehe"}
+                {"Our first Christmas together!! Had so much fun that night as well, with me being \"gay\" for a few minutes trying on your earring, and the waiters in the bar thinking we were ACTUAL alcoholics for drinking that much alcohol 🍷 Also, pleasantly surprised by how much effort you put in for my Christmas gift yaaa love it a lot hehe 🎄"}
             </Typography>
         </div>
     )

@@ -71,14 +71,14 @@ export default function Thirteenth() {
     if (!isClient) return null; 
     const headerComponent = (
         <div className={classes.introHeader}>
-            {"You're a wizard, Sherry!"}
+            {"You're a wizard, Sherry! 🧙‍♂️✨"}
         </div>
     )
     const textComponent = (
         <div className={classes.typoItem}>
             {headerComponent}
             <Typography variant='h6' style={{ marginTop: '10px' }}>
-                {"Such a fun exhibition heheh, and we took so many cute photos together!! Ms. 叶, you make me really happy, and I hope I’m lucky enough for you to keep making me happy :-) Soooo, I would like to ask~"}
+                {"Such a fun exhibition heheh! We took so many cute photos together!! 📸 Ms. 叶, you truly make me so happy, and I hope I'm lucky enough to keep experiencing that happiness with you :-) Sooo, I would like to ask~"}
             </Typography>
         </div>
     )

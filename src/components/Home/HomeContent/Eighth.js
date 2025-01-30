@@ -70,7 +70,7 @@ export default function Eighth() {
     if (!isClient) return null; 
     const headerComponent = (
         <div className={classes.introHeader}>
-            {"Sake and Spicy shots"}
+            {"Sake 🍶 and Spicy shots 🌶"}
         </div>
     )
     const textComponent = (

@@ -71,14 +71,14 @@ export default function Twelveth() {
     if (!isClient) return null; 
     const headerComponent = (
         <div className={classes.introHeader}>
-            {"Thanks Anna"}
+            {"Thanks Anna 💁‍♀️"}
         </div>
     )
     const textComponent = (
         <div className={classes.typoItem}>
             {headerComponent}
             <Typography variant='h6' style={{ marginTop: '10px' }}>
-                {"Although we didn't particularly plan to go for this Hennessey exhibition, but still gotta thank her for letting you know, or not we wouldn't have known there will be free alcohol HAHAHA"}
+                {"Though we didn’t originally plan to visit the Hennessy exhibition, gotta still thank her for heads-up—otherwise, we wouldn't have known about the free 🥃 HAHAHA"}
             </Typography>
         </div>
     )
