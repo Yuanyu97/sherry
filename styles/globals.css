@@ -1,0 +1,12 @@
+/* styles/globals.css */
+
+@font-face {
+    font-family: 'Protest Riot';
+    src: url('../public/fonts/ProtestRiot.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Protest Riot', sans-serif !important;
+  }
