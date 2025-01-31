@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../../styles/globals.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { CssBaseline, Container, GlobalStyles } from '@mui/material';
+import { CssBaseline, Container, GlobalStyles, Box } from '@mui/material';
 import Layout from '../hoc/Layout/Layout';
 import Home from '../components/Home/Home';
 
@@ -14,11 +14,7 @@ const globalStyles = (
     styles={{
       "html, body": {
         position: "relative",
-        backgroundImage: "url('/bg.jpg')", // Ensure correct path
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
+        overflowX: "hidden",
         minHeight: "100vh",
         width: "100%",
       },
@@ -27,19 +23,27 @@ const globalStyles = (
 );
 
 export default function App() {
-  useEffect(() => {
-    // Ensure background remains fixed on all devices
-    document.documentElement.style.backgroundImage = "url('/bg.jpg')";
-    document.documentElement.style.backgroundSize = "cover";
-    document.documentElement.style.backgroundRepeat = "no-repeat";
-    document.documentElement.style.backgroundPosition = "center";
-    document.documentElement.style.backgroundAttachment = "fixed";
-  }, []);
-
   return (
     <ThemeProvider theme={theme}>
-      {globalStyles} {/* ✅ Applied GlobalStyles properly */}
+      {globalStyles}
       <CssBaseline />
+
+      {/* ✅ Fixed Background Div */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          backgroundImage: "url('/bg.jpg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          zIndex: -1, // ✅ Sends it behind all content
+        }}
+      />
+
       <Container maxWidth="lg">
         <Layout>
           <Home />
