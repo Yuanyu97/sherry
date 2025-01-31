@@ -1,44 +1,50 @@
 "use client";
 
-import React from 'react'
-// import './globals.css'
-import '../../styles/globals.css'
-import { makeStyles } from '@mui/styles'
-import { useTheme } from '@mui/material/styles'
+import React, { useEffect } from 'react';
+import '../../styles/globals.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Container from '@mui/material/Container'
-import CssBaseline from '@mui/material/CssBaseline'
-import Layout from '../hoc/Layout/Layout'
-import Home from '../components/Home/Home'
+import { CssBaseline, Container, GlobalStyles } from '@mui/material';
+import Layout from '../hoc/Layout/Layout';
+import Home from '../components/Home/Home';
 
-const useStyles = makeStyles(() => ({
-  root: {
-    position: 'relative',
-    backgroundImage: 'url(./bg.jpg)',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed', // This keeps the background fixed while scrolling
-    minHeight: '100vh', // Ensure it covers the entire viewport
-    width: '100%', // Full width
-  }
-}))
+const theme = createTheme();
 
-const theme = createTheme()
+const globalStyles = (
+  <GlobalStyles
+    styles={{
+      "html, body": {
+        position: "relative",
+        backgroundImage: "url('/bg.jpg')", // Ensure correct path
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        minHeight: "100vh",
+        width: "100%",
+      },
+    }}
+  />
+);
 
 export default function App() {
-  const classes = useStyles()
+  useEffect(() => {
+    // Ensure background remains fixed on all devices
+    document.documentElement.style.backgroundImage = "url('/bg.jpg')";
+    document.documentElement.style.backgroundSize = "cover";
+    document.documentElement.style.backgroundRepeat = "no-repeat";
+    document.documentElement.style.backgroundPosition = "center";
+    document.documentElement.style.backgroundAttachment = "fixed";
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
-      <div className={classes.root}>
-        <CssBaseline />
-        <Container maxWidth="lg">
-          <Layout>
-            <Home />
-          </Layout>
-        </Container>
-      </div>
+      {globalStyles} {/* ✅ Applied GlobalStyles properly */}
+      <CssBaseline />
+      <Container maxWidth="lg">
+        <Layout>
+          <Home />
+        </Layout>
+      </Container>
     </ThemeProvider>
-  )
+  );
 }
-
