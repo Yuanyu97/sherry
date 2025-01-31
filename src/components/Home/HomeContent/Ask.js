@@ -93,7 +93,7 @@ export default function Ask() {
         "Are you sure?",
         "咪咪 please",
         "Don't do this to me :(",
-        "别上我的心...",
+        "别伤我的心...",
         "I'm gonna cry...",
       ]
 
